@@ -2,6 +2,7 @@ fo=1000                        #fundamental frequency
 w=2*pi*fo                     # radians per sec
 fs=25000                      # Sample Frequency
 t=seq(0,1,1/fs)
+# for external data read sample data into x  i.e. read.csv("xxx.csv")
 #x=sin(w*t)
 x=sin(w*t)+(1/3)*sin(3*w*t)+(1/5)*sin(5*w*t)+(1/7)*sin(7*w*t)+(1/9)*sin(9*w*t)+(1/11)*sin(11*w*t)                    # signal to be sampled
 # pcf=2/(as.integer(length(x))/2)   # power correction factor
