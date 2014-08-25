@@ -10,7 +10,7 @@ pcf=.0006399942
 fcf=fs/(as.integer(length(x))) #Frequency correction factor
 par(mfrow=c(3,1))
 n=1:100
-plot(n*1/fo/50,x[n],"l",xlab="time (sec)",ylab="volts")  #plots signal volts against time
+plot(n*1/fs/50,x[n],"l",xlab="time (sec)",ylab="volts")  #plots signal volts against time
 grid()
 a=abs(Re(fft(x)))
 m=as.integer(length(a)/2)
